@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <node name="static_transform_broadcast" pkg="static_transform_util" type="static_tf2_broadcaster.py"
+  <node name="static_transform_broadcast" pkg="pioneer" type="static_tf2_broadcaster.py"
     args="laser 0 0 1 0 0 0">
   </node>
 
@@ -8,9 +8,9 @@
     <arg name="host" value="192.168.0.2"/>
   </include>
 
-  <include file="$(find axis_camera)/launch/axis.launch"/>
+  <!--include file="$(find axis_camera)/launch/axis.launch"/>
 
-  <node name="axis_ptz" pkg="axis_camera" type="axis_ptz.py"/>
+  <node name="axis_ptz" pkg="axis_camera" type="axis_ptz.py"/-->
 
   <!-- Launch robot -->
   <node name="rosaria_node" pkg="rosaria" type="RosAria"/>
