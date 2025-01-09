@@ -4,9 +4,9 @@
     args="laser 0 0 1 0 0 0">
   </node>
 
-  <include file="$(find lms1xx)/launch/LMS1xx.launch">
+  <!--include file="$(find lms1xx)/launch/LMS1xx.launch">
     <arg name="host" value="192.168.0.2"/>
-  </include>
+  </include-->
 
   <!--include file="$(find axis_camera)/launch/axis.launch"/>
 
@@ -17,9 +17,9 @@
 
   <include file="$(find teleop_twist_joy)/launch/teleop.launch"/>
 
-  <node name="teleop_joy" pkg="teleop_twist_joy" type="teleop_node">
+  <!--node name="teleop_joy" pkg="teleop_twist_joy" type="teleop_node">
     <remap from="cmd_vel" to="rosaria_node/cmd_vel"/>
-  </node>
+  </node-->
     
   <!--node name="teleop_key" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py">
     <remap from="cmd_vel" to="rosaria_node/cmd_vel"/>
